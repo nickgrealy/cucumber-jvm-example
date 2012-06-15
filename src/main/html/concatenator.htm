@@ -1,0 +1,25 @@
+<html>
+<head>
+  <style type="text/css">
+    legend{font-weight: bold;}
+    fieldset{background-color: #fdf5e6;width: 50%;}
+  </style>
+  <script type="text/javascript">
+    function el(elementId) {
+      return document.getElementById(elementId);
+    }
+    function concat() {
+      el('result').value = (el('v1').value + el('v2').value);
+    }
+  </script>
+</head>
+<body>
+<fieldset>
+  <legend>Concatenator</legend>
+Value1: <input id="v1" type="text"/><br/>
+Value2: <input id="v2" type="text"/><br/>
+<input id="concat" type="button" value="Concatenate" onclick="concat()"/><br/>
+Result: <input id="result" type="text" disabled="disabled" /><br/>
+</fieldset>
+</body>
+</html>
